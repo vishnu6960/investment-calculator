@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Header from './components/header/Header'
 import InputGroup from './components/input-group/InputGroup'
 import Results from './components/results/Results';
+import './App.css'
 
 const App = () => {
 
@@ -12,6 +13,8 @@ const App = () => {
     interest: 6,
     duration: 2,
   });
+
+  const isInputValid = inputData.duration >= 1
 
   const handleCalculate = () => {
     setIsCalculate(true)
@@ -29,8 +32,8 @@ const App = () => {
   return (
     <>
       <Header />
-      <InputGroup inputData={inputData} onChange={handleChange} handleCalculate={handleCalculate} />
-      {isCalculate && <Results inputData={inputData} />}
+      <InputGroup inputData={inputData} onChange={handleChange} handleCalculate={handleCalculate} isInputValid={isInputValid} />
+      {(isCalculate && isInputValid) && <Results inputData={inputData} />}
     </>
   )
 }

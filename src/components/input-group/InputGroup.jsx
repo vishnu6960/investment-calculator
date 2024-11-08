@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./InputGroup.css";
 
-const InputGroup = ( {inputData, onChange, handleCalculate} ) => {
+const InputGroup = ( {inputData, onChange, handleCalculate, isInputValid} ) => {
   
   return (
     <div id="inputDiv" className="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
@@ -53,7 +53,10 @@ const InputGroup = ( {inputData, onChange, handleCalculate} ) => {
             }
           />
         </p>
+
       </div>
+      {!isInputValid && <p className='invalid'>Please enter duration greater than zero</p>}
+
       <button className="btn btn-primary" onClick={ handleCalculate }>Calculate</button>
     </div>
   );
