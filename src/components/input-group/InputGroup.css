@@ -1,0 +1,34 @@
+#inputDiv {
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 30px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+
+}
+
+label {
+    display: block;
+}
+
+.input-group {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+@media screen and (max-width:420px) {
+
+    .input-group {
+        justify-content: center;
+        gap: 2px;
+    }
+}
+
+button {
+    width: 7rem;
+}
