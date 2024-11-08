@@ -1,0 +1,9 @@
+#results {
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+td,
+th {
+    text-align: center;
+}

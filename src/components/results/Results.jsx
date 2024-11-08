@@ -1,5 +1,6 @@
 import React from 'react'
 import { calculationResult, formatter } from '../../util/calculation'
+import './Results.css'
 
 const Results = ({inputData}) => {
     const resultData = calculationResult(inputData)
@@ -7,7 +8,7 @@ const Results = ({inputData}) => {
     const initialInvestment = resultData[0].finalValue - resultData[0].interest - resultData[0].annualInvestment
     console.log(initialInvestment)
   return (
-    <table id='results'>
+    <table id='results' className='col-12 col-md-9 col-lg-8 col-xl-6'>
         <thead>
             <tr>
                 <th>Year</th>

@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./InputGroup.css";
 
-const InputGroup = ( {inputData, onChange} ) => {
+const InputGroup = ( {inputData, onChange, handleCalculate} ) => {
   
   return (
     <div id="inputDiv" className="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
@@ -54,7 +54,7 @@ const InputGroup = ( {inputData, onChange} ) => {
           />
         </p>
       </div>
-      <button className="btn btn-primary">Calculate</button>
+      <button className="btn btn-primary" onClick={ handleCalculate }>Calculate</button>
     </div>
   );
 };
