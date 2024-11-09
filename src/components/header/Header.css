@@ -1,7 +1,10 @@
-#header{
+#header {
     margin: 0 auto;
     text-align: center;
+    color: aliceblue;
 }
-img{
+
+img {
     max-height: 150px;
+    /* background-color: transparent */
 }

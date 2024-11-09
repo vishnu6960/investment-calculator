@@ -32,7 +32,7 @@ const InputGroup = ( {inputData, onChange, handleCalculate, isInputValid} ) => {
       </div>
       <div className="input-group">
         <p>
-          <label>Expected Interest(%): </label>
+          <label>Expected Returns(%): </label>
           <input
             type="number"
             required
